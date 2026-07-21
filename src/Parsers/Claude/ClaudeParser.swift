@@ -392,7 +392,28 @@ private struct ClaudeTranscriptUsage: Decodable {
 private extension JSONDecoder {
     static var claudeFixtureDecoder: JSONDecoder {
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
+        // `.iso8601` rejects fractional seconds on older Foundation versions,
+        // so accept both `2026-07-10T10:00:00Z` and `2026-07-10T10:00:00.000Z`.
+        decoder.dateDecodingStrategy = .custom { decoder in
+            let container = try decoder.singleValueContainer()
+            let value = try container.decode(String.self)
+
+            let formatter = ISO8601DateFormatter()
+            formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+            if let date = formatter.date(from: value) {
+                return date
+            }
+
+            formatter.formatOptions = [.withInternetDateTime]
+            if let date = formatter.date(from: value) {
+                return date
+            }
+
+            throw DecodingError.dataCorruptedError(
+                in: container,
+                debugDescription: "Unrecognized ISO 8601 timestamp: \(value)"
+            )
+        }
         return decoder
     }
 }
