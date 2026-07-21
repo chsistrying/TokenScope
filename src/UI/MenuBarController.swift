@@ -40,6 +40,12 @@ final class MenuBarController {
         statusItem.button?.toolTip = "TokenScope"
         statusItem.button?.target = self
         statusItem.button?.action = #selector(togglePopover)
+
+        if let image = NSImage(systemSymbolName: "scope", accessibilityDescription: "TokenScope") {
+            image.isTemplate = true
+            statusItem.button?.image = image
+            statusItem.button?.imagePosition = .imageLeading
+        }
     }
 
     private func configurePopover() {
