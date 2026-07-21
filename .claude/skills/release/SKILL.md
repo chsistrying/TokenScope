@@ -13,7 +13,7 @@ Follow the generic `swift-release-flow` skill if installed; these are the TokenS
 - **Changelog**: `CHANGELOG.md`, Keep-a-Changelog style. Move `## Unreleased` items under `## X.Y.Z - YYYY-MM-DD`; rewrite entries as user benefits.
 - **Artifact**: `bash scripts/package_unsigned_dmg.sh` → `dist/TokenScope-X.Y.Z-unsigned-<timestamp>/TokenScope-X.Y.Z-unsigned.dmg`. Verify with `hdiutil verify <dmg>`.
 - **CI must be green** on `main` before tagging: `gh run list --limit 1`.
-- **Repo**: `w05191998/TokenScope`; git identity is repo-local (`w05191998`) — do not change global config.
+- **Repo**: `chsistrying/TokenScope`; git identity is repo-local (`chsistrying`) — do not change global config.
 
 ## Release notes template
 
