@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" width="160" alt="TokenScope logo">
+</p>
+
 # TokenScope
 
 ![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-blue)
@@ -10,11 +14,6 @@ TokenScope is a native macOS menu bar app that reads your local Claude Code and
 Codex CLI logs and shows where your AI coding tokens and costs went — per
 provider, per model, per project, per session. Zero config: it detects the logs
 automatically. Everything stays on your Mac.
-
-## Screenshots
-
-<!-- TODO: add screenshots (menu bar summary + popover breakdown), light and dark mode -->
-_Screenshots coming soon._
 
 ## Features
 
