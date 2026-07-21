@@ -1,0 +1,5 @@
+{"timestamp":"2026-07-10T10:00:00.000Z","type":"session_meta","payload":{"id":"rollout-tools","session_id":"codex-tool-session","cwd":"/Users/example/work/tokenscope"}}
+{"timestamp":"2026-07-10T10:00:01.000Z","type":"turn_context","payload":{"type":"turn_context","model":"gpt-5.5","cwd":"/Users/example/work/tokenscope"}}
+{"timestamp":"2026-07-10T10:00:10.000Z","type":"event_msg","payload":{"type":"tool_call","name":"Read","arguments":{"path":"/Users/example/work/tokenscope/Sources/App.swift"}}}
+{"timestamp":"2026-07-10T10:00:20.000Z","type":"event_msg","payload":{"type":"exec_command","id":"codex-tool-1","command":"sed -n '1,120p' Sources/App.swift","exit_code":1,"stderr":"sed: Sources/App.swift: No such file or directory"}}
+{"timestamp":"2026-07-10T10:01:20.000Z","type":"event_msg","payload":{"type":"token_count","info":{"last_token_usage":{"input_tokens":200,"cached_input_tokens":40,"output_tokens":30,"total_tokens":230}}}}

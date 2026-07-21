@@ -1,0 +1,15 @@
+# SwiftPM
+.build/
+.swiftpm/
+
+# Local packaging output
+dist/
+
+# macOS
+.DS_Store
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/

@@ -1,0 +1,13 @@
+{
+  "records": [
+    {
+      "session_id": "codex-fixture-edge",
+      "started_at": "2026-07-10T11:00:00Z",
+      "usage": {
+        "input_tokens": 200,
+        "cached_input_tokens": 75,
+        "output_tokens": 50
+      }
+    }
+  ]
+}

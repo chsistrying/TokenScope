@@ -1,0 +1,4 @@
+{"type":"user","timestamp":"2026-07-10T10:00:00.000Z","sessionId":"claude-edge","cwd":"/Users/example/work/edge-app","message":{"role":"user","content":"hello"}}
+{not-json
+{"type":"assistant","timestamp":"2026-07-10T10:00:05.000Z","sessionId":"claude-edge","cwd":"/Users/example/work/edge-app","message":{"role":"assistant","usage":{"input_tokens":10,"cache_creation_input_tokens":20,"cache_read_input_tokens":30,"output_tokens":5}}}
+{"type":"usage","timestamp":"2026-07-10T10:01:00Z","session_id":"claude-fixture-edge","project_path":"/Users/example/work/fixture-edge","usage":{"input_tokens":40,"cache_creation_input_tokens":50,"cache_read_input_tokens":60,"output_tokens":7}}

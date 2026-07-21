@@ -1,0 +1,3 @@
+{"timestamp":"2026-07-10T10:00:00.000Z","type":"session_meta","payload":{"id":"rollout-edge","cwd":"/Users/example/work/edge-codex"}}
+{not-json
+{"timestamp":"2026-07-10T10:00:20.000Z","type":"event_msg","payload":{"type":"token_count","info":{"last_token_usage":{"input_tokens":100,"cached_input_tokens":30,"output_tokens":20}}}}

@@ -1,0 +1,2 @@
+{"type":"usage","timestamp":"2026-01-15T10:00:00Z","end_time":"2026-01-15T10:02:10Z","duration_seconds":130,"session_id":"claude-session-001","model":"claude-3-5-sonnet-20241022","cwd":"/Users/example/work/tokenscope","project_name":"tokenscope","usage":{"input_tokens":1200,"output_tokens":340,"total_tokens":1540}}
+{"type":"usage","timestamp":"2026-01-15T10:05:00Z","session_id":"claude-session-001","model":"claude-3-5-sonnet-20241022","project_path":"/Users/example/work/tokenscope","project_name":"tokenscope","usage":{"input_tokens":600,"output_tokens":220}}
