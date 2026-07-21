@@ -4,6 +4,7 @@
 
 # TokenScope
 
+![CI](https://github.com/w05191998/TokenScope/actions/workflows/ci.yml/badge.svg)
 ![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
